@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## CCM3 result JSON array, object item strucure for Amelie
+```
+    {
+        "application": "kl-amelie",
+        "groupId": "ch.basler.kl",
+        "artifactId": "amelie-server-spring",
+        "packaging": "docker",
+        "version": "1.0.15",
+        "stage": "Acc",
+        "server": "Openshift KL, kl-apps-acc",
+        "date": "2022-11-23",
+        "ttime": "15:01:30",
+        "userId": "b042293",
+        "auftragNr": "",
+        "classifier": "",
+        "status": "deployed",
+        "ccm": "3"
+    },
+```
