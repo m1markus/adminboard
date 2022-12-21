@@ -1,6 +1,9 @@
-<p class="shadow-lg">ccm3-view works!</p>
 
-<div>
+<h1 class="p-6 shadow-lg text-3xl font-bold">
+    List installed components
+</h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
     <app-ccm3-env [artifacts]="artifacts" stage="Test"></app-ccm3-env>
     <app-ccm3-env [artifacts]="artifacts" stage="Int"></app-ccm3-env>
     <app-ccm3-env [artifacts]="artifacts" stage="Acc"></app-ccm3-env>
