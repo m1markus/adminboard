@@ -1,0 +1,10 @@
+<p>ccm3-env works! {{ stage }}</p>
+
+<div *ngFor="let artifact of getFilteredArtifacts()" class="shadow-lg">
+    <p >artifact: {{ artifact.artifactId }}</p>
+    <p >stage: {{ artifact.stage }}</p>
+    <p >version: {{ artifact.version }}</p>
+    <p >date: {{ artifact.date }}</p>
+    <p >ttime: {{ artifact.ttime }}</p>
+    <p >status: {{ artifact.status }}</p>
+</div>

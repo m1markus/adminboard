@@ -1,4 +1,13 @@
 <p class="shadow-lg">ccm3-view works!</p>
+
+<div>
+    <app-ccm3-env [artifacts]="artifacts" stage="Test"></app-ccm3-env>
+    <app-ccm3-env [artifacts]="artifacts" stage="Int"></app-ccm3-env>
+    <app-ccm3-env [artifacts]="artifacts" stage="Acc"></app-ccm3-env>
+    <app-ccm3-env [artifacts]="artifacts" stage="Prod"></app-ccm3-env>
+</div>
+
+<!--
 <div *ngFor="let artifact of artifacts" class="shadow-lg">
     <p >artifact: {{ artifact.artifactId }}</p>
     <p >stage: {{ artifact.stage }}</p>
@@ -6,4 +15,4 @@
     <p >date: {{ artifact.date }}</p>
     <p >ttime: {{ artifact.ttime }}</p>
     <p >status: {{ artifact.status }}</p>
-</div>
+</div> -->
