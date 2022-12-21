@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Artifact } from 'src/app/shared/artifact'
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +19,7 @@ export class ArtifactService {
 
   constructor(private http: HttpClient) {}
 
-  getArtifacts() {
+  getArtifacts(): Observable<Artifact[]> {
     let url = this.urlLocal;
     return this.http.get<Artifact[]>(url, this.httpOptions);
   }

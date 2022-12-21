@@ -12,5 +12,5 @@ export interface Artifact {
     auftragNr: string,
     classifier: string,
     status: string,
-    ccm: string
+    ccm: number
   }
