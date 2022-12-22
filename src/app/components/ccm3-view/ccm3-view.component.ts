@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit} from '@angular/core';
 import { ArtifactService } from 'src/app/services/artifact.service';
 import { Artifact } from 'src/app/shared/artifact'
 
@@ -7,7 +7,7 @@ import { Artifact } from 'src/app/shared/artifact'
   templateUrl: './ccm3-view.component.html',
   styleUrls: ['./ccm3-view.component.sass']
 })
-export class Ccm3ViewComponent implements OnInit {
+export class Ccm3ViewComponent implements OnInit, OnDestroy {
 
   artifacts: Artifact[];
 
@@ -16,11 +16,14 @@ export class Ccm3ViewComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('TOTO-99 ngOnInit()... ')
+    console.log('Ccm3ViewComponent.ngOnInit()...')
 
     this.arifactService.getArtifacts()
       .subscribe(res => {
         this.artifacts = res.filter(artifact => {
+
+          //debugger
+
           /*
           // this works kind of
           if (artifact.application === "kl-amelie") {
@@ -58,4 +61,7 @@ export class Ccm3ViewComponent implements OnInit {
     }); */
   }
 
+  ngOnDestroy(): void {
+    console.log('Ccm3ViewComponent.ngOnDestroy()...')
+  }
 }

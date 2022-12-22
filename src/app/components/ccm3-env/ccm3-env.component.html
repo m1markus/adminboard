@@ -1,8 +1,9 @@
 <div class="rounded-xl bg-gray-700 p-4">
-  <p class="text-xl">{{ stage }}</p>
+  <p class="text-xl pb-4">{{ stage }}</p>
   <div *ngFor="let artifact of getFilteredArtifacts()" class="">
     <p>artifact: {{ artifact.artifactId }}</p>
-    <p>stage: {{ artifact.stage }}</p>
+    <!--
+    <p>stage: {{ artifact.stage }}</p>  -->
     <p>version: {{ artifact.version }}</p>
     <p>date: {{ artifact.date }}</p>
     <p>ttime: {{ artifact.ttime }}</p>
